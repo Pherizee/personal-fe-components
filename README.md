@@ -8,8 +8,8 @@ A personal library of React/Next.js source components, meant to be **pulled dire
 
 ```bash
 # from the root of the consuming project
-npx degit yourgithubuser/personal-fe-components/data-table components/data-table
-npx degit yourgithubuser/personal-fe-components/form components/form
+npx degit Pherizee/personal-fe-components/data-table components/data-table
+npx degit Pherizee/personal-fe-components/form components/form
 ```
 
 `degit` copies the files with no git history attached, so they land as normal source you can edit freely. Re-run the same command later to pull updates (it will refuse to overwrite by default — pass `--force` if you want to overwrite local edits).
@@ -17,7 +17,7 @@ npx degit yourgithubuser/personal-fe-components/form components/form
 ### Option B — git submodule (recommended if you want to track updates over time)
 
 ```bash
-git submodule add https://github.com/yourgithubuser/personal-fe-components components/personal-fe-components
+git submodule add https://github.com/Pherizee/personal-fe-components.git components/personal-fe-components
 ```
 
 With this approach `data-table/` and `form/` live one level deeper (e.g. `components/personal-fe-components/data-table`). Either update the `@/components/*` alias imports inside the submodule after pulling it in, or add a matching path alias in the consumer's `tsconfig.json`:
